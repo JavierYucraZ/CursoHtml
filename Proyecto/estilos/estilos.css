@@ -1,0 +1,219 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth; 
+}
+
+.menu{
+	padding: 9px 20px;
+	background: white;
+}
+
+.menu .contenedor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contenedor{
+	max-width: 1280px;
+	width: 90%;
+	margin: auto;
+}
+
+header .logo{
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0 20px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+
+#intro{
+	background: url(../imagenes/intro.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: 'Oswald', sans-serif;
+	display: flex;
+}
+
+.izquierda{
+	width: 60%;
+	padding: 65px 75px;
+	background-color: rgba(255,255,255,.75);
+}
+
+.derecha{
+	width: 55%;
+	color: white;
+	height: 350px;
+}
+
+.contenido{
+	background-color: red;
+	padding: 20px 50px 50px 50px;
+}
+
+#intro .izquierda p{
+	font-size: 12px;
+	letter-spacing: 18px;
+}
+
+#intro h1{
+	font-size: 66px;
+	font-weight: 100;
+}
+
+#intro a, #programs a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	letter-spacing: 7px;
+	border-bottom: 2px solid red;
+	padding-bottom: 13px;
+	padding: 0px 18px 13px 10px;
+}
+
+#intro .derecha a{
+	color: white;
+	padding: 20px;
+	border: 1px solid white;
+	display: inline-block;
+}
+
+#intro .derecha p{
+	font-size: 30px;
+	letter-spacing: 5px;
+	margin-bottom: 15px;
+}
+
+/* Seccion Programas */
+
+#programs{
+	padding-top: 90px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+}
+
+.rojo{
+	color: red;
+}
+
+#programs .cero{
+	font-size: 80px;
+}
+
+#programs .ini{
+	letter-spacing: 18px;
+	font-size: 15px;
+}
+
+#programs h2{
+	font-size: 63px;
+	font-weight: 100;
+	letter-spacing: 16px;
+	margin-top: 30px;
+	margin-bottom: 16px;
+}
+
+#programs p{
+	font-family: 'Open Sans';
+	color: #666;
+	font-size: 15px;
+	width: 75%;
+	margin: auto;
+	line-height: 30px;
+}
+
+#programs a{
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.contenedor-programs{
+	display: flex;
+	margin-top: 50px;
+	width: 88%;
+	margin: auto;
+}
+
+#programs #uno{
+	background: #2a1e3f;
+	color: white;
+}
+
+#uno p, #dos p, #dos h3, #tres p{
+	color: white;
+	width: 100%;
+	text-align: left;
+}
+
+#tres p{
+	color: black;
+}
+
+h3{
+	font-size: 26px;
+	letter-spacing: 4px;
+	text-align: left;
+	font-weight: 400;
+	margin-bottom: 16px;
+}
+
+.program{
+	padding: 45px 47px;
+	/*rango en horizontal*/
+	/*rango en vertical*/
+	/*radio de difuminacion*/
+	/*profundidad del color*/
+	box-shadow: 50px 70px 120px -42px rgba(0,0,0,0.5);
+}
+
+#dos{
+	background: red;
+	position: relative;
+	top: 70px;
+}
+
+#tres{
+	border: 1px solid black;
+}
+
+
+#video{
+	padding: 50px;
+	text-align: center;
+}
+
+#video .contenedor{
+	position: relative;
+}
+
+#video .botones{
+	position: absolute;
+	top: 40%;
+	left: 45%;
+}
+
+#video i{
+	font-size: 125px;
+	color: white;
+}
+
+#video button{
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+
+
