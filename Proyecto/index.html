@@ -23,7 +23,9 @@
 						<li><a href="#intro">Inicio</a></li>
 						<li><a href="#programs">Programs</a></li>
 						<li><a href="#video">VIdeo</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#join">Unete</a></li>
+						<li><a href="#testimonials">Testimonios</a></li>
+						<li><a href="#">Contacto</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -81,7 +83,7 @@
 
 		<section id="video">
 			<div class="contenedor">
-				<video src="imagenes/video.mp4" width="900" height="800"></video>
+				<video src="imagenes/video.mp4" id="idVideo" width="900" height="800"></video>
 				<div class="botones">
 					<button id="boton" onclick="playVideo()">
 						<i class="fa fa-play-circle" aria-hidden="true"></i>
@@ -90,9 +92,87 @@
 			</div>
 		</section>
 
+
+		<section id="join">
+			<div class="izquierda">
+				<a href="">JOIN NOW</a>
+				<img src="imagenes/izq.jpg" id="uno" alt="">
+			</div>
+			<div class="derecha">
+				<img src="imagenes/der1.jpg" id="dos" alt="">
+				<img src="imagenes/der2.jpg" id="tres" alt="">
+			</div>
+		</section>
+
+		<section id="testimonials">
+			<div class="contenedor">
+				<span class="comilla">"</span>
+				<h2>TESTIMONIALS</h2>
+				<a href="">JOIN THE MOVEMENT</a>
+				<div class="contenedor-testimonials">
+
+					<div class="testimonial">
+						<div class="contenido">
+							<div class="foto"></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem optio unde iste qui esse vitae laboriosam numquam magni tempora, neque est temporibus, laborum porro, blanditiis officiis sed facilis ducimus repudiandae.</p>
+						</div>
+						<p class="nombre">Marissa James</p>
+					</div>
+
+					<div class="testimonial">
+						<div class="contenido">
+							<div class="foto"></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem optio unde iste qui esse vitae laboriosam numquam magni tempora, neque est temporibus, laborum porro, blanditiis officiis sed facilis ducimus repudiandae.</p>
+						</div>
+						<p class="nombre">Marissa James</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="contacto">
+			<div class="izquierda">
+				<p>BIGGER.FASTER.STRONGER</p>
+				<h2>DIVINATION</h2>
+				<form action="" method="">
+					<input type="text" placeholder="Nombre" name="nombre">
+					<input type="email" placeholder="Email" name="correo">
+					<textarea name="mensaje" placeholder="Mensaje"></textarea>
+					<button type="submit">Enviar</button>
+				</form>
+			</div>
+			<div class="derecha">
+				<div class="horarios">
+					<h3>GYM HOURS</h3>
+					<ul>
+						<li>Lunes - Viernes : 5am - 11am</li>
+						<li>Lunes - Viernes : 5am - 11am</li>
+						<li>Lunes - Viernes : 5am - 11am</li>
+					</ul>
+				</div>
+				<div class="pass">
+					<h3>FREE 3 DAY GYM PASS</h3>
+					<a href="">GET STARTED</a>
+				</div>
+			</div>
+		</section>
+
 	</main>
 
-	<br><br><br><br><br><br>
+<script>
+	var video = document.getElementById('idVideo');
+	var boton = document.getElementById('boton');
+
+	function playVideo(){
+		video.play();
+		boton.style.display = 'none';
+	}
+
+	video.addEventListener('ended', function(){
+		boton.style.display = 'block';
+	});
+</script>
 
 </body>
 </html>
