@@ -347,6 +347,7 @@ span.comilla{
 	font-family: 'Oswald';
 	color: #fff;
 	display: flex;
+	margin-top: 30px;
 }
 
 #contacto .izquierda{
@@ -379,9 +380,6 @@ span.comilla{
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	font-weight: 100;
-}
-
-::-moz-placeholder{
 	color: white;
 }
 
@@ -394,5 +392,255 @@ span.comilla{
 	font-size: 17px;
 	font-family: 'Oswald';
 	letter-spacing: 5px;
+	cursor: pointer;
 }
+
+#contacto .derecha{
+	background: #f7291f;
+	align-self: flex-end;
+	padding: 5px 50px 50px 50px;
+	width: 36%;
+}
+
+.horarios{
+	box-shadow: 0px 70px 120px -42px rgba(0,0,0,0.3);
+	padding: 30px;
+	margin-bottom: 32px;
+}
+
+.horarios ul li{
+	list-style: none;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.pass{
+	background: white;
+	color: black;
+	padding: 30px;
+}
+
+.pass a{
+	text-decoration: none;
+	color: black;
+	border: 1px solid red;
+	padding: 22px 30px;
+	margin-top: 20px;
+	display: inline-block;
+	font-size: 17px;
+	letter-spacing: 5px;
+}
+
+#idVideo{
+	width: 900px;
+	height: 800px;
+}
+
+.menu-icon{
+	display: none;
+}
+
+@media screen and (max-width: 800px){
+	nav{
+		position: absolute;
+		top: 100%;
+		background: lightcoral;
+		width: 100%;
+		left: 0;
+		display: none;
+	}
+
+	nav ul li{
+		display: block;
+		margin: 20px;
+	}
+
+	nav ul li a{
+		color: white;
+	}
+
+	#intro .izquierda{
+		width: 100%;
+		padding: 32px 0;
+		height: 270px;
+	}
+
+	#intro .izquierda p{
+		letter-spacing: 3px;
+	}
+
+	#intro .izquierda h1{
+		font-size: 46px;
+	}
+
+	#intro a, #programs a, #testimonials a{
+		letter-spacing: 4px;
+		font-size: 13px;
+	}
+
+	#intro{
+		flex-direction: column;
+	}
+
+	#intro .derecha{
+		width: 100%;
+		height: 200px;
+	}
+	
+	#intro .derecha p{
+		font-size: 25px;
+	}
+
+	#intro .derecha a{
+		padding: 15px;
+		font-size: 14px;
+	}
+
+	#programs .cero{
+		font-size: 50px;
+	}
+
+	#programs h2{
+		font-size: 22px;
+	}
+
+	#programs p{
+		width: 100%;
+	}
+
+	.contenedor-programs{
+		margin-top: 40px;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	#programs #dos{
+		position: unset;
+		margin-top: 30px;
+	}
+
+	#programs #tres{
+		margin-top: 30px;
+	}
+
+	.program{
+		padding: 25px 27px;
+	}
+
+	#video{
+		margin: 10px 0;
+	}
+
+	#idVideo{
+		width: 100%;
+		height: auto;
+	}
+
+	#video i{
+		font-size: 70px;
+	}
+
+	#video .botones{
+		top: 25%;
+		left: 35%;
+	}
+
+	#join{
+		flex-direction: column;
+	}
+
+	#join .izquierda{
+		width: 100%;
+		margin: 0;
+	}
+
+	#join #uno{
+		top: 25%;
+		left: 21%;
+		width: 60%;
+	}
+
+	#join .derecha{
+		width: 100%;
+		background: none;
+	}
+
+	#join #dos{
+		position: unset;
+		width: 75%;
+	}
+
+	#join #tres{
+		width: 62%;
+		left: 36%;
+		top: 74%;
+	}
+
+	#testimonials{
+		margin-top: 100px;
+	}
+
+	span.comilla{
+		font-size: 80px;
+		display: inline-block;
+		height: 60px;
+	}
+
+	#testimonials h2{
+		font-size: 27px;
+		letter-spacing: 10px;
+	}
+	
+	.contenedor-testimonials{
+		flex-direction: column;
+		margin-top: 20px;
+	}
+
+	.testimonial{
+		width: 100%;
+		margin-bottom: 20px;
+		border-bottom: 1px solid black;
+	}
+
+	#contacto{
+		flex-direction: column;
+	}
+
+	#contacto .izquierda{
+		padding: 10px;
+		width: 90%;
+	}
+
+	#contacto .izquierda p{
+		font-size: 13px;
+		letter-spacing: 5px;
+	}
+
+	#contacto h2{
+		font-size: 45px;
+		letter-spacing: 0;
+	}
+	
+	#contacto form input, textarea{
+		padding-bottom: 10px;
+	}
+
+	#contacto button{
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	
+	#contacto .derecha{
+		width: 100%;
+		align-self: center;
+		padding: 5px 0;
+	}
+
+	.menu-icon{
+		display: block;
+		margin-right: 15px;
+	}
+
+}
+
 
